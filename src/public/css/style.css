@@ -19,6 +19,9 @@ header {
 .top-header img {
     width: 35%;
 }
+
+/* barra de busqueda  */
+
 .form{
     display: flex;
     align-items: center;
@@ -63,6 +66,7 @@ header {
     border: white;
 } 
 
+/* articulos  */
 
 .section-title {
     font-size : 18px;
@@ -88,6 +92,26 @@ header {
     width: 100%;
     display: block;
 }
+main section article img {
+    width: 100%;
+} 
+article{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.bg-white{
+    display: flex;
+    background-color: #fff;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    justify-content: flex-start;
+    flex-direction: row;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+
+
 .top-header .body-text{
     font-size: 12px;
     text-align: center;
@@ -127,23 +151,7 @@ main {
 .img-banner img{
     width: 100%;
 }
-main section article img {
-    width: 100%;
-} 
-article{
-    padding: 10px;
-    margin-bottom: 10px;
-}
-.bg-white{
-    display: flex;
-    background-color: #fff;
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-    justify-content: flex-start;
-    flex-direction: row;
-    position: relative;
-    flex-wrap: wrap;
-}
+
 ul{
     display: none;
 }
