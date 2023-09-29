@@ -112,28 +112,13 @@ article{
 
 
 
-.top-header .body-text{
+.inscription{
     font-size: 12px;
     text-align: center;
-    margin: 10px;
-}
-.bold{
-    font-size: 16px;
+    margin: 7px;
     font-weight: bold;
-    text-align: center;
 }
-.copyr{
-    font-size: 12px;
-    margin-top: 10px;
-}
-.fa-credit-card, .fa-user-shield, .fa-gift{
-    display: flex;
-    justify-content: center;
-    color:#1259c3;
-    font-size: 2em;
-    margin: 10px;
-    padding: 5px;
-}
+
 .burger-menu{
     display: inline-flex;
     padding: 6px;
@@ -172,8 +157,128 @@ ul{
     color: #39b54a;
 }
 
-/*TABLET*/
-@media (min-width: 361px){
+/* Footer */
+.foot{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.foot div {
+    width: 100%;
+} 
+
+.bold{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+.body-text{
+    text-align: center;
+}
+.copyr{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.fa-credit-card, .fa-user-shield, .fa-gift{
+    display: flex;
+    justify-content: center;
+    color:#1259c3;
+    font-size: 2em;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* parte de crea tu cuenta */
+form{
+    display: flex;
+    margin: 5%;
+    padding-top: 5px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px; 
+    max-width: 400px;
+    text-align: center;
+}
+label{
+        padding: 10px 10px 10px 0px;
+        font-weight: bold;
+        font-size: 16px;
+}
+
+.cate{
+    display: inline-flex;
+    text-align: start;
+    padding: 20px;
+    flex-direction: column;
+}
+.cate input{
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+.formu{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+input{
+    box-sizing: border-box;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 10px;
+}
+.bot-radio label{
+    font-weight: lighter;
+    padding-right: 20%;
+
+}
+.bot-radio {
+    position: relative;
+    margin-left: 25%;
+    
+}
+.perfil{
+    display: flex;
+    justify-content: left;
+    font-weight: 1000;
+}
+.register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cate label {
+    padding: 10%;
+    margin: 10%;
+}
+
+button {
+    box-sizing: border-box;
+    padding: 2%;
+    margin: 5%;
+    border-radius: 10px
+
+}
+button:hover{
+    background-color: #0022AA;
+    color: #fff;
+}
+
+a:hover{
+    color:fff
+}
+
+
+/* parte de login */
+
+.login {
+    justify-content: center;
+    
+}
+
+/*Tablet*/
+@media (min-width: 768px){
     article{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 40%;
@@ -226,25 +331,25 @@ ul{
     }
     .fa-id-card, .fa-sign-in-alt, .fa-shopping-basket{
         padding: 5px;
-    }   
+    }
+    .top-header{
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: nowrap;
+    }
 
 }
 
 /*DESKTOP*/
-@media (min-width: 769px){
+@media (min-width: 1024px){
 
-    /* img {
-        width: 10px;
-    } */
     article {
         width: 20%;
     }
     .section-title {
         margin-left: auto;
     }
-    .top-header{
-        justify-content: space-between;
-    }
+
     .nav-login, .nav-off{
         padding: 10px;
     }
@@ -259,86 +364,28 @@ ul{
     .desc{
         display: none;
     }
-}
-
-/* parte de crea tu cuenta */
-form{
-    display: flex;
-    margin: 5%;
-    padding-top: 5px;
-    background-color: rgb(230, 230, 230);
-    border-radius: 10px; 
-    max-width: 400px;
-    text-align: center;
-}
-label{
-        padding: 10px 10px 10px 0px;
+     /* MODIFICACIONES FOOTER  */
+    .foot{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .foot div {
+        width: 33%;
+    } 
+    .copyr{
+        width: 100%;
         font-weight: bold;
-        font-size: 16px;
+    }
+    .bol{
+        text-decoration: underline;
+    }
+    .fa-credit-card:hover, .fa-user-shield:hover, .fa-gift:hover{
+        color: #000;
+    } 
 }
 
-.cate{
-    display: inline-flex;
-    text-align: start;
-    padding: 20px;
-    flex-direction: column;
-}
-.cate input{
-    padding: 10px;
-    margin: 5px;
-    text-align: center;
-}
-.formu{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
 
-}
-input{
-    box-sizing: border-box;
-    padding: 2%;
-    margin: 5%;
-    border-radius: 10px;
-}
-.bot-radio label{
-    font-weight: lighter;
-    padding-right: 20%;
-
-}
-.bot-radio {
-   
-    position: relative;
-    margin-left: 25%;
-    
-}
-.perfil{
-    display: flex;
-    justify-content: left;
-    font-weight: 1000;
-}
-.register{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.cate label {
-    padding: 10%;
-    margin: 10%;
-}
-
-button {
-    box-sizing: border-box;
-    padding: 2%;
-    margin: 5%;
-    border-radius: 10px
-}
-/* parte de login */
-
-.login {
-    justify-content: center;
-    
-}
 
   /* TRANSICIONES Y TRANSFORMACIONES  */
 article:hover .fa-truck{
@@ -352,5 +399,4 @@ article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     cursor:pointer;
 }
-
 
