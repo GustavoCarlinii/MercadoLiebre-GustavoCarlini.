@@ -83,7 +83,7 @@ header {
 .off{
     font-size: 16px;
     color: #39b54a;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 .desc{
     font-size: 16px;
@@ -131,7 +131,7 @@ article{
 main {
     width: 90%;
     margin: auto;
-    background-color: #ebebeb;
+    background-color: white;
 }
 .img-banner img{
     width: 100%;
@@ -279,9 +279,9 @@ a:hover{
 
 /*Tablet*/
 @media (min-width: 768px){
-    article{
+    article:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 40%;
+     
     }
     .desc{
         display: block;
